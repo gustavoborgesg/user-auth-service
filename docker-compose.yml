@@ -1,0 +1,15 @@
+version: '3'
+services:
+  api-authentication:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      DB_INTERNAL_DATA_URL: ${DB_INTERNAL_DATA_URL}
+      DB_INTERNAL_DATA_USERNAME: ${DB_INTERNAL_DATA_USERNAME}
+      DB_INTERNAL_DATA_PASSWORD: ${DB_INTERNAL_DATA_PASSWORD}
+      DB_INTERNAL_DATA_DRIVER: ${DB_INTERNAL_DATA_DRIVER}
+      JWT_SECRET: ${JWT_SECRET}
+    restart: always
