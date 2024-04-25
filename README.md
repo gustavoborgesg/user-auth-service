@@ -1,5 +1,11 @@
 ﻿# User Auth Service API Controllers Documentation
 
+Este projeto é construído em Java utilizando o framework Spring Boot, com segurança reforçada pelo Spring Security e integração com JWT e cookies para autenticação stateless. Ele emprega JUnit para garantir uma cobertura de testes das principais funcionalidades, assegurando a confiabilidade do sistema.
+
+Desenvolvido inicialmente com SQL Server, a aplicação é facilmente adaptável a outros sistemas de gerenciamento de banco de dados devido ao uso do JPA, que abstrai a camada de acesso a dados e facilita a portabilidade entre diferentes bancos.
+
+A arquitetura do sistema segue o padrão MVC, com ênfase em clean code e a implementação de interfaces para uma melhor abstração e desacoplamento dos serviços. Essas práticas permitem uma manutenção e escalabilidade mais eficientes, adequando-se às necessidades de projetos que demandam robustez e flexibilidade.
+
 ## Auth Controller
 
 ### Authenticate User
